@@ -41,7 +41,7 @@ Add_numbers1();
      else {
          Reply = "It is evening time.";
      }
-     document.getElementById("Time_of_day").innerHTMl = Reply;
+     document.getElementById("Time_of_day").innerHTML = Reply;
  }
  
 
