@@ -1,19 +1,74 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-   
-   
+   <a href="https://www.amazon.com/gp/bestsellers/?ref_=nav_cs_bestsellers">Amazons bestsellers!</a>
+   <a href="https://www.amazon.com/gp/new-releases/?ref_=nav_cs_newreleases">Amazons New Releases</a>
+    <link rel="stylesheet" type="text/css" href="css\basic_javascript7.css">
+    <script src=http://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js></script>
 </head>
 
 <body>
+    <h1> smooth scroll</h1>
+
+    <div class="main" id="section1">
+        <h2>section1</h2>
+        <a href="#section2">click me to scroll to section 2</a>
+    </div>
+
+    
     <p id="Greeting"></p>
     <button onclick = "get_Date()">click here</button>
 
-    <p id = "How_old_are_you?" onclick="Age_Function()">click here</p>
+    <p id = "Age" onclick="Age_Function()">click here</p>
 
     <p id="Time_of_day"></p>
     <button onclick="Time_function()">click here to get the time</button>
+
+    <div class="main" id="section2">
+        <h2>section 2</h2>
+        <a href="#section1">click me to scroll to section 1</a>
+    </div>
+    <div id="slideshow">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSESstWkQmEIwUl6quxvefqC_8a3BFTp0rnEuGn8DNsQ19xZmwe&s">
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRckozKa8Bn3N6W-BxxCoFJ8pjyH2Wt4mSB_A-REoj585rny6KFWg&s">
+        </div>
+    </div>
+
     
+   
+    
+    <div class="open-button" class="form-popup" id="myForm" onclick="openForm()" class="sticky" >sticky popup form</div>
+
+    <form action="/Javascript/yodaacticonpg.html" class="form-container">
+    <h1>login</h1>
+    
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+</div>
+
+
     <script src="Basic_JavaScript_7.js"></script>
+    <script>
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() {
+        $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+    }, 3000);
+    </script>
 </body>
 </html>

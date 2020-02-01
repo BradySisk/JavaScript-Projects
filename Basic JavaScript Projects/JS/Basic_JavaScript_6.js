@@ -31,4 +31,19 @@ function Person(first, last, age, eye) {
 
     var myDaughter = new Person ("Ana", "Sisk", 5, "brown");
 
-document.getElementById("New_and_This").innerHTML ="My daughter is" + myDaughter.age  + ".";
+document.getElementById("New_and_This").innerHTML ="My daughter is" +  myDaughter.age  +  ".";
+
+function validateForm() {
+    var x = document.forms["myForm"]["phonenumber"].value;
+    if (x == "") {
+      alert("Must have a phone number");
+      return false;
+    }
+  }
+
+  function openForm() {
+      document.getElementById("myForm").style.display = "block";
+  }
+  function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+  }

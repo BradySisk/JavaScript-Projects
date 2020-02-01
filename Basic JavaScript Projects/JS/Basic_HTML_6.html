@@ -1,9 +1,16 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css\javacript6.css">
    
 </head>
 <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>document.body.className += ' fade-out';
+    $(function() {
+    $('body').removeClass('fade-out');
+});</script>
    
     <p id="Counting" onclick="count_function()">Click here</p>
 
@@ -12,7 +19,7 @@
    
 
 
-    <p> Riders must be at least 52 cm tall to ride.</p>
+    <p style="font-size:2vw;"> Riders must be at least 52 cm tall to ride.</p>
     <input id="Height" value="52" />
     <button onclick="Ride_Function()">Click here</button>
     <p id="Ride"></p>
@@ -24,6 +31,32 @@
 <p id="vote"></p>
 
 <script src="Basic_JavaScript_6.js"></script>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+ Phone Number: <input type="number" number="PhoneNumber">
+    <input type="submit" value="Submit">
+    </form>
+   
+    <button class="open-button" class="sticky" onclick="openForm()">Open Form</button>
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+    
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="text" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+
+
+    <img src="C:\Users\Mark Wahlbang\Documents\GitHub\JavaScript-Projects\images\zoomprj.jpg">
+
+
 </body>
 
 

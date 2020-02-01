@@ -1,0 +1,101 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#section1 {
+    height:600px;
+    background-color:red;
+}
+
+#section2 {
+    height:600px;
+    background-color:blue;
+}
+
+#slideshow {
+    margin: 80px auto;
+    position: relative;
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+
+  #slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  div.sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top:80px;
+      bottom:0;
+      right:0px;
+      background-color: chartreuse;
+      padding:20px;
+      font-size: 25px;
+  }
+
+  .button {
+      background-color: crimson;
+      border:none;
+      color:white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display:inline-block;
+      font-size:16px;
+      margin:4px 2px;
+      cursor:pointer;
+ }
+
+ .form-popup {
+     display:none;
+     position: fixed;
+     bottom:0;
+     right:15px;
+     border:3px solid black;
+     z-index:9;
+ }
+
+ .form-container {
+     max-width:200px;
+     padding:15px;
+     background-color: crimson;
+ }
+
+ .form-container input[type=text], .form-container input[type=password] {
+     width:100%;
+     padding: 15px;
+     margin: 5px 0 22px 0;
+     border: none;
+     background: cyan;
+ }
+
+ .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+     background-color: darkorchid;
+     outline:none;
+ }
+
+ .form-container .btn {
+     background-color: darkred;
+     color:black;
+     padding:15px 20px;
+     border:none;
+     cursor:pointer;
+     width:100%;
+     margin-bottom: 10px;
+     opacity:0.8;
+ }
+ 
+ .form-container .cancel {
+     background-color: crimson;
+ }
+
+ .form-container .btn:hover, .open-button:hover {
+     opacity:1;
+ }

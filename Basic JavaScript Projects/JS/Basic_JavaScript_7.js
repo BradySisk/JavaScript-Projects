@@ -14,19 +14,28 @@ Add_numbers1();
      if (new Date().getHours() < 18) {
          document.getElementById("Greeting").innerHTML = "How are you today?";
      }
+     else{}
  }
  
  function Age_Function() {
-    Age= document.getElementById("Age").value;
-    if (Age >= 21) {
+     Age = document.getElementById("Age").value;
+     if (Age >= 21) {
         Drink = "You are old enough to party!!!!";
     }
     else {
-        Drink = "You are not old enough to do party :(";
+
+        Drink = "You are not old enough to do party.";
     }
     document.getElementById("How_old_are_you?").innerHTML = Drink;
  }
 
+   
+
+
+
+
+    Age= document.getElementById("Age").value;
+   
 
 
  function Time_function() {
@@ -43,5 +52,7 @@ Add_numbers1();
      }
      document.getElementById("Time_of_day").innerHTML = Reply;
  }
+
+
  
 
