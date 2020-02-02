@@ -59,7 +59,7 @@ body.fade-out {
     opacity:1;
 }
 
-div {
+img {
     width:100px;
     height: 100px;
     background: mediumturquoise;
@@ -67,10 +67,7 @@ div {
     animation: mymove 5s infinite;
 }
 
-@keyframes mymove {
-    from{top:0px;}
-    to{top:200px;}
-}
+
 
 @keyframes zoominoutsinglefeatured {
     0% {
@@ -85,5 +82,15 @@ div {
 }
 
 .single-featured-image-header img {
-    animation: zoominoutsinglefeatured 15s forwards;
+   width:748px;
+   height: 468px;
+   background:mediumturquoise;
+   position: relative;
+   animation: mymove 5s;
+    animation: zoominoutsinglefeatured 5s;
+}
+
+@keyframes mymove {
+    from{top:0px;}
+    to{top:200px;}
 }

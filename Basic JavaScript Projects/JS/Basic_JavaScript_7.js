@@ -53,6 +53,12 @@ Add_numbers1();
      document.getElementById("Time_of_day").innerHTML = Reply;
  }
 
+ function openForm() {
+    document.getElementById("myForm").style.display="block"; 
+}
 
+ function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
  
 
